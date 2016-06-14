@@ -1,0 +1,367 @@
+<html>
+    <head>
+        <title> Filip Slatinac</title>
+        <style>
+            
+            html { 
+              background: url(coding.jpg) no-repeat center center fixed; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+                  }  
+
+            .nav-bar{
+                list-style-type: none;
+                position: fixed;
+                right: 1%
+            }
+            
+            .nav-bar li{
+                display:inline;
+                float:left;
+                color: white;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-right: 20px;
+                font-family: Tahoma, Geneva, sans-serif;
+                font-size: 85%;
+            }
+            
+            .nav-bar li a:link {
+                text-decoration: none;
+                color: white;
+                -o-transition: color 0.5s linear;
+                -moz-transition: color 0.5s linear;
+                -khtml-transition: color 0.5s linear;
+                -webkit-transition: color 0.5s linear;
+                -ms-transition: color 0.5s linear;
+                transition: color 0.5s linear;
+                color: white;
+            }
+            
+            .nav-bar li a:visited {
+                text-decoration: none;
+                color: white;
+            }
+            
+             .nav-bar li a:hover {
+                 color: rgb(150,150,150);
+            }
+            
+              .under-skill{   
+                  margin-top: 10px;
+                  border: 0;
+                  height: 0;
+                  border-top: 1px solid rgba(0, 0, 0, 0.1);
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            
+             .skillsH{
+                 top:12%;
+                 position: relative;
+                 text-align: center;
+                 font-family: Tahoma, Geneva, sans-serif;
+                 font-size: 250%;
+                 color:white;
+
+            }
+            
+            .skillsH p{
+                font-size: 10;
+                font-family:Tahoma, Geneva, sans-serif;
+                color:white;
+            }
+
+            .skill{
+                list-style-type: none; 
+                text-align: center;
+                position: relative;
+                top: 10vh;   
+            }
+            
+            
+            .skill li{
+                display:inline;
+                padding-left: 1%; 
+                color: white;
+                margin-right:0;
+                font-family: Tahoma, Geneva, sans-serif;
+                font-size: 150%;
+                padding-right: 1%;
+                padding-top: 0.2%;
+                padding-bottom: 0.2%;
+                background:  rgba(70,70,70,0.6);
+                border-radius: 7px;
+                border:  solid rgb(90,90,90);
+            }
+            
+            .experience{
+                position: relative;
+                left: 1.5%;
+                background:  rgba(70,70,70,0.6);
+                border-radius: 1em;
+                border:  solid rgb(90,90,90);
+                margin: 13vh auto 0;
+                width: 90vh;
+                height: 50vh;
+                display: flex;
+                z-index: 1;
+
+            }
+            
+            .usage{
+                top: 1.5%;
+                width: 49.5%;
+                height: 99.5%;
+                flex-grow: 1;
+                border-right: 1px solid rgba(250,250,250,0.5);
+            }
+            
+            .proficiency{
+                width: 49.5%;
+                height:99.5%;
+                flex-grow: 1;
+                text-align: center;
+            }
+            
+            .UH{
+                padding-left:35%;
+                font-family: Tahoma, Geneva, sans-serif;
+                color: white;
+                font-size: 150%;
+          
+            }
+            
+            
+            .UL li{
+                color:white;
+                font-size: 100%;
+                font-family: Tahoma, Geneva, sans-serif;
+            }
+            
+            .UL li li{
+                margin: 10px;
+
+            }
+            
+          .graph{
+                background: rgba(199,246,241,0.7); 
+                width:100%;
+                position: absolute;
+                height: 0;
+                bottom:0;
+                border-radius: 20px; 
+                z-index: 3;
+            }
+            .graphSkel{
+                position: relative;
+                top: 3%;
+                width:40%;
+                height: 94%;
+                border-radius: 20px; 
+                border: 0.1px black solid;
+                display: inline-flex;
+                flex-direction: column-reverse;
+                align-content: flex-end;
+                align-items: stretch;
+                margin: 0 auto;
+                z-index: 7;
+
+            }
+            
+            
+            .beginnerH{
+                font-family: Tahoma, Geneva, sans-serif;
+                color: rgba(0,0,0,0.9);
+                border-top: 1px solid rgba(250,250,240,0.5);
+                flex-grow: 1;
+            }
+            
+            .noviceH{
+                font-family: Tahoma, Geneva, sans-serif;
+                color: rgba(0,0,0,0.9);
+                border-top: 1px solid rgba(250,250,240,0.5);
+                flex-grow: 1;
+            }
+            
+            .proficientH{
+                font-family: Tahoma, Geneva, sans-serif;
+                color: rgba(0,0,0,0.9);
+                border-top: 1px solid rgba(250,250,240,0.5);
+                flex-grow: 1;
+            }
+            
+            .expertH{
+                font-family: Tahoma, Geneva, sans-serif;
+                color: rgba(0,0,0,0.9);
+                flex-grow: 1;
+            }
+            
+                     
+        </style>
+
+    </head> 
+    
+    
+    <body>
+        
+           
+        <div>
+            <ul class = "nav-bar" id = "nav">
+                <li><a href = "index.html">HOME</a></li>
+                <li><a href = "Portfolio.html">PORTFOLIO</a></li>
+                <li><a href = "Filip_Slatinac_Resume.pdf" target = "_blank">RESUME</a></li>
+                <li><a href = "Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class = "skillsH" id = "listOfSkills"><h2>Skills<p>Hover or click the skill icons*</p> <hr class = "under-skill" width = "5%"></h2></div>
+        
+            <ul class = "skill">
+                <li id = "Java">Java</li>
+                <li id = "Python">Python</li>
+                <li id = "Swift">Swift</li>
+                <li id = "PHP">PHP</li>
+                <li id = "HTML">HTML</li>
+                <li id  = "CSS">CSS</li>
+                <li id = "SQL">SQL</li>
+                <li id = "JS">JavaScript</li>
+            </ul>
+        
+        
+        <div class = "experience" id = "JSDIV" style = "display: none" >
+            <div class = "usage">
+                <hX class = "UH">JavaScript</hX>
+                <ul class = "UL">
+                    <li>SASS-IT Web Developper<ul>
+                        <li>API management</li>
+                        <li>Animation</li>
+                        <li>Flow control</li>
+                        <li>Data modelling</li></ul></li>
+                    <li>Personal Website<ul>
+                        <li>Animation</li>
+                        <li>Flow Control</li> </ul></li>
+                    <li>BusNow App<ul>
+                        <li>API management</li>
+                        <li>Data modelling</li></ul></li>
+                </ul>
+            </div>
+            <div class = "proficiency"><div class = "graphSkel"><div class = "beginnerH">Beginner</div> <div class = "noviceH">Novice</div> <div class = "proficientH">Proficient</div> <div class = "expertH">Expert</div><div class = "graph" id = "JSG"></div></div></div>
+        </div>
+        
+        
+        <div class = "experience" id = "SQLDIV" style = "display: none" >   
+            <div class = "usage">
+                <hX class = "UH">SQL</hX>
+                <ul class = "UL">
+                    <li>SASS-IT Web Developper<ul>
+                        <li>Query design</li>
+                        <li>Table management</li>
+                        <li>Table creation</li></ul></li>
+                </ul>
+            </div>
+            <div class = "proficiency"><div class = "graphSkel"><div class = "graph" id = "SQLG"></div><div class = "beginnerH">Beginner</div> <div class = "noviceH">Novice</div> <div class = "proficientH">Proficient</div> <div class = "expertH">Expert</div></div></div>
+        </div>
+        
+        
+        
+        <div class = "experience" id = "CSSDIV" style = "display: none" >
+            <div class = "usage"> 
+                <hX class = "UH">CSS</hX>
+                <ul class = "UL">
+                    <li>SASS-IT Web Developper<ul>
+                        <li>Design</li></ul></li>
+                    <li>Personal Website<ul>
+                        <li>Animation</li>
+                        <li>design</li>
+                        <li>Website was built using only CSS as the design tool</li></ul></li>
+                </ul>
+            </div>
+            <div class = "proficiency"><div class = "graphSkel"><div class = "graph" id = "CSSG"></div><div class = "beginnerH">Beginner</div> <div class = "noviceH">Novice</div> <div class = "proficientH">Proficient</div> <div class = "expertH">Expert</div></div></div>
+        </div>
+        
+        
+        
+        <div class = "experience" id = "HTMLDIV" style = "display: none" >
+            <div class = "usage"> 
+                <hX class = "UH">HTML</hX>
+                <ul class = "UL">
+                    <li>SASS-IT Web Developper</li>
+                    <li>Personal Website<ul>
+                        <li>Website was built using only HTML as the markup tool</li></ul></li>
+                </ul>
+            </div>
+            <div class = "proficiency"><div class = "graphSkel"><div class = "graph" id = "HTMLG"></div><div class = "beginnerH">Beginner</div> <div class = "noviceH">Novice</div> <div class = "proficientH">Proficient</div> <div class = "expertH">Expert</div></div></div>
+        </div>
+        
+        
+        
+        <div class = "experience" id = "PHPDIV" style = "display: none" >
+            <div class = "usage"> 
+                <hX class = "UH">PHP</hX>
+                <ul class = "UL">
+                    <li>SASS-IT Web Developper<ul>
+                        <li>MVC framework</li>
+                        <li>Backend language used</li></ul></li>
+                    <li>BusNow app<ul>
+                        <li>Constructed our own Api using PHP</li></ul></li>
+                </ul>
+            </div> 
+            <div class = "proficiency"><div class = "graphSkel"><div class = "graph" id = "PHPG"></div><div class = "beginnerH">Beginner</div> <div class = "noviceH">Novice</div> <div class = "proficientH">Proficient</div> <div class = "expertH">Expert</div></div></div>
+        </div>
+        
+        
+        <div class = "experience" id = "SwiftDIV" style = "display: none" >
+            <div class = "usage"> 
+                <hX class = "UH">Swift</hX>
+                <ul class = "UL">
+                    <li>SafePass app<ul>
+                        <li>Language used to make the SafePass app</li></li>
+                </ul>
+            </div>
+            <div class = "proficiency"><div class = "graphSkel"><div class = "graph" id = "SwiftG"></div><div class = "beginnerH">Beginner</div> <div class = "noviceH">Novice</div> <div class = "proficientH">Proficient</div> <div class = "expertH">Expert</div></div></div>
+        </div>
+        
+        
+            
+        <div class = "experience" id = "PythonDIV" style = "display: none" >
+            <div class = "usage"> 
+                <hX class = "UH">Python</hX>
+                <ul class = "UL">
+                    <li>BlackJack Game<ul>
+                        <li>Language used to make a simplistic black jack game</li></ul></li>
+                    <li>Simplistic Excel spreadsheet management tool<ul>
+                        <li>Many Python librairies used to build the tool</li></ul></li>
+                </ul>
+            </div>
+            <div class = "proficiency"><div class = "graphSkel"><div class = "graph" id = "PythonG"></div><div class = "beginnerH">Beginner</div> <div class = "noviceH">Novice</div> <div class = "proficientH">Proficient</div> <div class = "expertH">Expert</div></div></div>
+        </div>
+        
+        
+        
+        <div class = "experience" id = "JavaDIV" style = "display: none" >
+            <div class = "usage">
+                <hX class = "UH">Java</hX>
+                <ul class = "UL">
+                    <li>Tetris<ul>
+                        <li>MVC with swing used to create a fully playable tetris game</li></ul></li>
+                    <li>TicTacToe<ul>
+                        <li>Computer vs human game created fully with Java</li></ul></li>
+                    <li>Dot Game<ul>
+                        <li>MVC and BFS algorythm used to create a computer vs human game</li></ul></li>
+                </ul>
+            </div>
+            <div class = "proficiency"><div class = "graphSkel"><div class = "graph" id = "JavaG"></div><div class = "beginnerH">Beginner</div> <div class = "noviceH">Novice</div> <div class = "proficientH">Proficient</div> <div class = "expertH">Expert</div></div></div>
+        </div>
+            
+	
+        
+
+        
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script src="portfolio.js"></script>
+    </body>
+    
+    
+    
+</html>
