@@ -1,4 +1,5 @@
 
+$(window).on("load resize", function() {
 
 let divs = ["#JSDIV","#SQLDIV","#CSSDIV","#HTMLDIV","#PHPDIV","#SwiftDIV","#PythonDIV","#JavaDIV"];
 
@@ -14,8 +15,7 @@ document.getElementById("Java")];
 
 
 
-
-$(DOMS).on("click mouseover",function (){
+$(DOMS).on("click mouseover",function (event){
     for(let i = 0; i < divs.length; i++){
         if(tabs[i] == event.target.id){
             FadeOut(divs[i]);
@@ -38,7 +38,7 @@ function FadeOut(element){
 
 
 
-$("body").click(function(){
+$("body").click(function(event){
     if(event.target.id !== "JS" && event.target.id != "SQL" && event.target.id != "CSS" &&event.target.id != "HTML" && event.target.id != "PHP" 
     && event.target.id != "Swift" && event.target.id != "Python" && event.target.id != "Java"){
         
@@ -56,6 +56,7 @@ $("body").click(function(){
 
 });
 
+    });
 
 
 
