@@ -1,2 +1,1 @@
-
-My personal website at: www.filipslatinac.xyz. This was made in summer 2016, when i first started learning web technologies. This was the first iteration of the "Personal website" project category.
+This is the third iteration of my portfolio website, this time I built it from the ground up using React as the web framework. Have a look: www.filipslatinac.xyz
